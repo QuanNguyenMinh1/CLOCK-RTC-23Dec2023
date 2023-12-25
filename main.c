@@ -94,7 +94,7 @@ void btn_pressing_callback()
   datetime.date = date_temp; //gán th�?i gian vừa cài đặt xong cho biến official (biến mà RTC sẽ tự động cập nhật)
 		mode = CHINHPHUT;  // gán mode 0 thành 1
 		break; // đang ở case BINHTHUONG thì chương trình sẽ gán cho biến mode (dòng 84), sau đó break ra kh�?i switch, rồi khi này chương trình sẽ không thực hiện lệnh gì trong khi đợi đi�?u kiện của 1 trong 3 cái if ở ngắt là đúng;
-    // Vậy lúc này, nếu bấm button_mode một lần nữa thì chương trình sẽ xét switch rồi nhảy vô case CHINHGIO vì biến "mode" đã được gán = 2 ở dòng 88; Else nhấn button_up một lần thì chương trình
+    // Vậy lúc này, nếu bấm button_mode một lần nữa thì chương trình sẽ xét switch rồi nhảy vô case CHINHGIO vì biến "mode" đã được gán = 2 ở dòng 100; Else nhấn button_up một lần thì chương trình
     // sẽ nhảy vào chạy hàm btn_adjust(up) hoặc nếu nhấn button_down thì chương trình sẽ nhảy vào chạy hàm btn_adjust(down).
 	case CHINHPHUT: // mode = 1
 		mode = CHINHGIO; // gán mode = 2
